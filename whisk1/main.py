@@ -13,6 +13,12 @@ class MainHandler(webapp2.RequestHandler):
         self.response.out.write(template.render())
 class ResultHandler(webapp2.RequestHandler):
     def get(self):
+        base_url = "http://www.recipepuppy.com/api/?"
+        url_params = {'q': self.request.get("answer")}
+        giphy_response = urllib2.urlopen(base_url + urllib.urlencode(url_params)).read()
+        giphy_json_content = giphy_data_source.read()
+        parsed_giphy_dictionary = json.loads(giphy_json_content)
+        gif_url = parsed_giphy_dictionary['data'][0]['images']['original']['url']
         template = jinja_environment.get_template('pages/results.html')
 
         self.response.out.write(template.render())

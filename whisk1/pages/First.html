@@ -4,34 +4,18 @@
 <link rel="stylesheet" href="static/first.css">
 </head>
 <body>
-  <h1>Whisk<h1>
+  <h1><img src = "static/Logo.png" alt="Whisk Logo" height="170" width="190"><h1>
     <h2>What Do You have In Your Kitchen?<h2>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<form name="ingredients" method="post">
-<div align="left"><br>
-<input type="checkbox" name="Milk" value="Milk"> Milk<br>
-<input type="checkbox" name="Butter" value="Butter" > Butter<br>
-<input type="checkbox" name="Cheese" value="Cheese"> Cheese<br>
-<input type="checkbox" name="Bread" value=" Bread"> Bread<br>
-<input type="checkbox" name="Eggs" value=" Eggs"> Eggs<br>
-<input type="checkbox" name="Chicken Breast" value="Chicken Breast"> Chicken Breast<br>
-<input type="checkbox" name="Tomato paste" value="Tomato Paste"> Tomato Paste<br>
-<input type="checkbox" name="Flour" value="Flour"> Flour<br>
-<input type="checkbox" name="Rice" value="Rice"> Rice<br>
-<input type="checkbox" name="Red Meat" value="Red Meat"> Red Meat<br>
+<form action="/results.html" name="ingredients" method="get" >
+      <p>  <input type="text" name="answer"/></p>
+      <p><input type="submit"></p>
+  </form>
+    </body>
 <br>
 <br>
 </div>
 </form>
-<form action="/results.html" method="get" >
-    <p><input type="submit"></p>
-</form>
 </body>
-<br>
-<br><br><br><br><br><br>
-<footer> This Is a project<br>
-I'd advise you to stop reading this.
-
-</footer>
 </html>
