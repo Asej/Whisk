@@ -1,8 +1,10 @@
 import json
 import jinja2
 import os
-import webapp2
-
+import webapp2 # webapp2 is a module that you import
+import random
+import urllib2
+import urllib
 
 jinja_environment = jinja2.Environment(
   loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
@@ -12,16 +14,15 @@ class MainHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('pages/first.html')
         self.response.out.write(template.render())
 class ResultHandler(webapp2.RequestHandler):
-    def get(self):
-        base_url = "http://www.recipepuppy.com/api/?"
-        url_params = {'q': self.request.get("answer")}
-        giphy_response = urllib2.urlopen(base_url + urllib.urlencode(url_params)).read()
-        giphy_json_content = giphy_data_source.read()
-        parsed_giphy_dictionary = json.loads(giphy_json_content)
-        gif_url = parsed_giphy_dictionary['data'][0]['images']['original']['url']
-        template = jinja_environment.get_template('pages/results.html')
-hg=self.request.get("answer")
-        self.response.out.write(template.render())
+        def get(self):
+            base_url = "http://www.recipepuppy.com/api/?"
+            url_params = {'q': self.request.get("answer")}
+            giphy_response = urllib2.urlopen(base_url + urllib.urlencode(url_params)).read()
+            giphy_json_content = giphy_data_source.read()
+            parsed_giphy_dictionary = json.loads(giphy_json_content)
+            gif_url = parsed_giphy_dictionary['data'][0]['images']['original']['url']
+            template = jinja_environment.get_template('pages/results.html')
+            self.response.out.write(template.render())
 app = webapp2.WSGIApplication([
     ('/', MainHandler),('/results.html', ResultHandler),
 ])

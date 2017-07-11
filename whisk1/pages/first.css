@@ -1,7 +1,8 @@
 h1 {
-  color : green;
+    vertical-align: baseline;
+}
+img{    position: fixed;
  }
-
 body {
     background-color: lightblue;
   }
