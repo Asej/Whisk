@@ -20,7 +20,7 @@ class ResultHandler(webapp2.RequestHandler):
         parsed_giphy_dictionary = json.loads(giphy_json_content)
         gif_url = parsed_giphy_dictionary['data'][0]['images']['original']['url']
         template = jinja_environment.get_template('pages/results.html')
-
+hg=self.request.get("answer")
         self.response.out.write(template.render())
 app = webapp2.WSGIApplication([
     ('/', MainHandler),('/results.html', ResultHandler),
