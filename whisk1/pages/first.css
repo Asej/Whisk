@@ -2,9 +2,13 @@ h1 { color : green; }
 
 body {
     background-color: lightblue;
+<<<<<<< HEAD
 }
 h2 {border-style: groove;}
 form {text-align: center;
 
 
 }
+=======
+  }
+>>>>>>> 565b5c992e2fa401d3dcceb4eb2638507bf8277f
