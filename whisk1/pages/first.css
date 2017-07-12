@@ -1,15 +1,14 @@
 h1 {
     vertical-align: baseline;
 }
-img{    position: fixed;
+img{
+  position: fixed;
  }
 body {
-    background-color: lightblue;
+    background-color: lightpink;
   }
 }
-h2 {
-  border-style: groove;
-}
+
 form {
   text-align: center;
 }

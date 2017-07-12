@@ -1,16 +1,19 @@
 <html>
 <head>
 <title>Whisk</title>
-<link rel="stylesheet" href="static/first.css">
 </head>
 <body>
   <h1><img src = "static/Logo.png" alt="Whisk Logo" height="170" width="190"><h1>
 
 <h1>Here's What You Can Make from {{ingredents}}:</h1>
+{% for x in range(10)%}
+{{name[x]}}
+<Br>
+Full  list of Ingredients:
+<p>{{ingredients[x]}}</p>
+<img src = "{{picture[x]}}"><br>
+<a href ="{{link[x]}}">Lets cook it!</a><br><br>
+     {% endfor %}
 
-<img src = "picture">
-<form action="/" method ="get">
-    <p><button input type="submit">I Messed Up </button></p>
-  </form>
 </body>
 <html>
