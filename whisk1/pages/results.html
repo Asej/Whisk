@@ -4,16 +4,16 @@
 </head>
 <body>
   <h1><img src = "static/Logo.png" alt="Whisk Logo" height="170" width="190"><h1>
-
-<h1>Here's What You Can Make from {{ingredents}}:</h1>
-{% for x in range(10)%}
+<link rel="stylesheet" href="static/first.css">
+<h1>Here's What You Can Make:</h1>
+<h3>{% for x in range(10)%}
 {{name[x]}}
-<Br>
+<Br><Br>
 Full  list of Ingredients:
 <p>{{ingredients[x]}}</p>
 <img src = "{{picture[x]}}"><br>
 <a href ="{{link[x]}}">Lets cook it!</a><br><br>
      {% endfor %}
-
+</h3>
 </body>
 <html>
