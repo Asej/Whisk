@@ -35,7 +35,7 @@ class ResultHandler(webapp2.RequestHandler):
         #     self.response.write(link+" "+"<br>")
              picture = parsed_dictionary['results'][y]['thumbnail']
              food['picture'].append(picture)
-        #     self.response.write(picture+" "+"<br>")
+        #    self.response.write(picture+" "+"<br>")
 
 
         template = jinja_environment.get_template('pages/results.html')#change html file for template

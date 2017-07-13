@@ -1,15 +1,76 @@
-h1 { color : green;
+h1 { color : lightblue;
     text-align: center;
+    font-weight: bolder;
+    text-shadow: 1px  1px  2px black ;
 }
 h3 {
     text-align: center ;
-    text-decoration-line: underline;
-
+  color: #AC5918;
+font-weight: bolder;
+text-shadow: 1px  1px  2px black ;
+}
+p{font-size-adjust: auto;
 
 }
 body {
-    background-color: lightblue;
+    background-image: url('pic.jpeg');
     cursor: url('whisk.cur'), auto;
+    text-align: center;
+    font-size: 30px;
+    text-decoration-color:blue
 
 }
-h2 {border-style: groove;}
+h2 {
+    text-rendering: geometricPrecision;
+    color: orange;
+    font-weight: bolder;
+    text-shadow: 2px  3px  8px black ;
+}
+b{
+  color: orange;
+  font-weight: bolder;
+  font-size: 20;
+  text-shadow: 2px  3px  8px black ;
+
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+.button {
+  padding: 15px 25px;
+  font-size: 28px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #8CAF50;
+  border: blue;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: #3e8e61}
+
+.button:active {
+  background-color: #3e8e81;
+  box-shadow: 0 5px #666;
+  transform: translateY(8px);
+}
+div{
+  margin-top: -100px;
+      margin-bottom: -100px;
+      margin-right: -150px;
+      margin-left: 80px;
+
+}
+
+}
+#share{
+  width: 36px;
+  position: relative;
+  top: -200px;
+  left: 50px;
+}
+#hot{
+  font-size: 25px
+}
+/*#product{
+width:200px;
+}
