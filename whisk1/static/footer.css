@@ -3,23 +3,26 @@ ul{
 }
 a{
 text-align: center;
-color:green;
- font-size: 20px
+color:#E8A32C;
+ font-size: 30px
 }
 .g{
 color:#0057e7;
+ font-size: 25px
 }
 .o{
   color:#d62d20;
-}
+  font-size: 25px
+ }
 .o2{
   color:#ffa700;
-}
+  font-size: 25px
+ }
 .l{
   color:#008744;
-}
+  font-size: 25px
+ }
 .e{
   color:#d62d20;
-}
-
-d
+  font-size: 25px
+ }

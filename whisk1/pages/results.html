@@ -3,16 +3,10 @@
 <title>Whisk</title>
 </head>
 <body>
-<style>
-body, html {
-    height: 100%;
-    margin: 0;
-}
 
-
-</style>
   <h1><img src = "static/Logo.png" alt="Whisk Logo" height="170" width="190"><h1>
 <link rel="stylesheet" href="static/first.css">
+<link rel="stylesheet" href="static/results.css">
 <h1>Here's What You Can Make:</h1>
 <h3>{% for x in range(10)%}
 {{name[x]}}
@@ -20,23 +14,12 @@ body, html {
   <link rel="stylesheet" href="static/results.css">
 Full  list of Ingredients:
 <p>{{ingredients[x]}}</p>
-
-<img id= "product" src = "{{picture[x]}}"><br>
-<a id="hot" href  ="{{link[x]}}">Lets cook it!</a><br><br>
+<img id= "product" src = "{{picture[x]}}">
+<a id="hot" href  ="{{link[x]}}">Lets cook it!</a><br>
+<!--<input type="checkbox" name="favorite" value="Bike">Save this<br><br>-->
      {% endfor %}
 
 </h3>
-<!-- AddToAny BEGIN -->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-<a class="a2a_button_facebook"></a>
-<a class="a2a_button_twitter"></a>
-<a class="a2a_button_google_plus"></a>
-<a class="a2a_button_google_gmail"></a>
-<a class="a2a_button_reddit"></a>
-<a class="a2a_button_pinterest"></a>
-<a class="a2a_button_linkedin"></a>
-</div>
 <script>
 var a2a_config = a2a_config || {};
 a2a_config.num_services = 6;
@@ -44,6 +27,7 @@ a2a_config.num_services = 6;
 <script async src="https://static.addtoany.com/menu/page.js"></script>
 <!-- AddToAny END -->
 </body>
+<footer>
 <link rel="stylesheet" href="static/footer.css">
 <c>Affiliate links</c><br>
 <a><a href="http://www.trash-talk-project.appspot.com" class="g" data-category="Site-Wide Custom Events" data-label="Footer Why Google">
@@ -58,5 +42,5 @@ a2a_config.num_services = 6;
                 DesktopGarden
         <a href="http://www.whiskfinal.appspot.com" class="e" data-category="Site-Wide Custom Events" data-label="Footer Training">
                     Whisk</a>
-
+</footer>
 <html>

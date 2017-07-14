@@ -5,6 +5,7 @@ import webapp2 # webapp2 is a module that you import
 import random
 import urllib2
 import urllib
+from google.appengine.ext import ndb
 
 jinja_environment = jinja2.Environment(
   loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
@@ -46,6 +47,10 @@ class ResultHandler(webapp2.RequestHandler):
             #my_title=gif_url["title"]
                 ####    my_pict=my_dict[results][i]["thumbnail"]
 
+#class S(ndb.Model):
+    #name = ndb.StringProperty()
+    #university = ndb.StringProperty()
+    #birthday = ndb.DateProperty()
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),('/results', ResultHandler),

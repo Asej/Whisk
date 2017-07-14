@@ -1,16 +1,18 @@
 #product{
     float: left;
-    margin: -125px 0px 10px 10px;
+    margin: -125px 0px 10px 150px;
+    height: 100px;
+   width: 100px;
+
 }
-.bg {
-    /* The image used */
-    background-image: url("pic.jpg");
+body {
+    background-image: url('pic.jpeg');
+    cursor: url('whisk.cur'), auto;
+    text-align: center;
+    font-size: 30px;
+    text-decoration-color:blue
 
-    /* Full height */
-      height: 100%;
-
-    /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+}
+#hot{
+  color: #C33C21;
 }
